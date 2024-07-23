@@ -1,0 +1,117 @@
+/* fonts */
+@font-face {
+    font-family: 'Inter';
+    src:url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf)
+}
+/* Root colors */
+:root {
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey700: hsl(0, 0%, 20%);
+--Grey800: hsl(0, 0%, 12%);
+--Grey900: hsl(0, 0%, 8%);
+}
+/* Global styles */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Inter';
+}
+
+body {
+    background-color: var(--Grey900);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 14px;
+    padding:0 10px;
+}
+/* Container */
+.container {
+min-height: 500px;
+max-width: 410px;
+width: 100%;
+background-color: var(--Grey800);
+border-radius: 15px;
+padding: 18px 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+    
+} 
+
+@media (min-width: 768px) {
+    .container {
+        width: 400px;
+    }
+}
+.image {
+ padding-top: 15px;
+ text-align: center;
+}
+
+.title {
+margin-top: 10px;
+width: 100%;
+text-align: center;
+color: var(--White);
+font-size: large;
+}
+
+.location { 
+margin-top: 10px;
+width: 100%;
+text-align: center;
+color: var(--Green);
+font-size: medium;
+}
+
+.description {
+margin-top: 25px;
+width: 100%;
+text-align: center;
+color: var(--White);
+margin-bottom: 9px;
+font-size: medium;
+}
+
+.image img {
+    width: 95px;
+    height: 95px;
+    border-radius: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+/* Shaping the classes */
+.Github, .instagram, .linked-in, .front-end, .twitter {
+    display: block;
+    padding: 15px 99px;
+    margin: 15px 0;
+    color: var(--White);
+    background-color: var(--Grey700);
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: medium;
+    white-space: nowrap;
+    font-weight: 600;
+}
+/* Hover effect */
+.Github:hover,.instagram:hover,.linked-in:hover,.front-end:hover,.twitter:hover {
+    background-color: var(--Green);
+    color: var(--White);
+    cursor: pointer;
+}
+/* Media */
+@media (min-width: 768px) {
+    .Github, .instagram, .linked-in, .front-end, .twitter {
+        padding: 10px 99px;
+    }
+}
